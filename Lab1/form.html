@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            background-color: #fff;
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(8, 8, 8, 0.1);
+        }
+
+        label {
+            display: inline-block;
+            width: 25%;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: calc(70% - 10px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"] {
+            background-color: #22a2e8;
+        }
+
+        input[type="reset"] {
+            background-color: #f544d1;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            filter: brightness(85%);
+        }
+
+        .button-group {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="phpinfo.php" method="post">
+        <label for="Fname">First Name</label>
+        <input type="text" placeholder="Enter your first name" name="Fname" id="Fname"><br>
+
+        <label for="Lname">Last Name</label>
+        <input type="text" placeholder="Enter your last name" name="Lname" id="Lname"><br>
+
+        <label for="address">Address</label>
+        <input type="text" placeholder="Enter your address" name="address" id="address"><br>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="Egypt">Egypt</option>
+            <option value="France">Tonis</option>
+            <option value="Palestine">Palestine</option>
+        </select><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <label for="skills">Skills</label></br>
+        <input type="checkbox" id="php" name="skills[]" value="PHP">
+        <label for="php">PHP</label><br>
+        <input type="checkbox" id="mysql" name="skills[]" value="MySQL">
+        <label for="mysql">MySQL</label><br>
+        <input type="checkbox" id="javascript" name="skills[]" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="checkbox" id="python" name="skills[]" value="Python">
+        <label for="python">Python</label><br>
+
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter your username" name="username" id="username"><br>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter your password" name="password" id="password"><br>
+
+        <label for="department">Department</label>
+        <select name="department"   id="department">
+            <option value="Open source" >Open Source</option>
+            <option value="Professional web">Professional Web</option>
+            <option value="User interface">User Interface</option>
+        </select><br>
+
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+</body>
+
+</html>
