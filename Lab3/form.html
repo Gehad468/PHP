@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+   
+
+    </style>
+</head>
+
+<body>
+
+    <form action="db.php" method="post">
+        <label for="Fname">First Name</label>
+        <input  type="text" placeholder="Enter your first name" name="Fname" id="Fname"><br>
+
+        <label for="Lname">Last Name</label>
+        <input type="text" placeholder="Enter your last name" name="Lname" id="Lname"><br>
+
+        <label for="address">Address</label>
+        <input type="text" placeholder="Enter your address" name="address" id="address"><br>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="Egypt">Egypt</option>
+            <option value="France">Tonis</option>
+            <option value="Palestine">Palestine</option>
+        </select><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <label for="skills">Skills</label></br>
+        <input type="checkbox" id="php" name="skills[]" value="PHP">
+        <label for="php">PHP</label><br>
+        <input type="checkbox" id="mysql" name="skills[]" value="MySQL">
+        <label for="mysql">MySQL</label><br>
+        <input type="checkbox" id="javascript" name="skills[]" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="checkbox" id="python" name="skills[]" value="Python">
+        <label for="python">Python</label><br>
+
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter your username" name="username" id="username"><br>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter your password" name="password" id="password"><br>
+
+        <label for="department">Department</label>
+        <select name="department" id="department">
+            <option value="Open source" >Open Source</option>
+            <option value="Professional web">Professional Web</option>
+            <option value="User interface">User Interface</option>
+        </select><br>
+
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+</body>
+
+</html>
